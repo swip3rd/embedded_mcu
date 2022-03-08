@@ -129,8 +129,8 @@ int core0_main(void)
         while( irq_ultra_sensor == 0 );
 
         printf("distance: %dcm\n", distance);
-
-        for(int i=0; i<100; i++)
+        // 2s wait
+        for(int i=0; i<20; i++)
         {
             irq_ultra_sensor = 0;
             while( irq_ultra_sensor == 0 );
